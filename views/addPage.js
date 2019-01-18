@@ -6,9 +6,31 @@ module.exports = () =>
     <h3>Add a Page</h3>
     <hr />
     <form method="POST" action="/wiki/">
-      <div>PLACEHOLDER FOR AUTHOR NAME FIELD</div>
+      <div class="form-group">
+        <label for="authname" class="col-sm-2 control-label">Author Name</label>
+        <div class="col-sm-10">
+          <input
+            id="authname"
+            name="authname"
+            type="text"
+            class="form-control"
+          />
+        </div>
+      </div>
 
-      <div>PLACEHOLDER FOR AUTHOR EMAIL FIELD</div>
+      <div class="form-group">
+        <label for="authemail" class="col-sm-2 control-label"
+          >Author Email</label
+        >
+        <div class="col-sm-10">
+          <input
+            id="authemail"
+            name="authemail"
+            type="text"
+            class="form-control"
+          />
+        </div>
+      </div>
 
       <div class="form-group">
         <label for="title" class="col-sm-2 control-label">Page Title</label>
@@ -17,12 +39,27 @@ module.exports = () =>
         </div>
       </div>
 
-      <div>PLACEHOLDER FOR PAGE CONTENT TEXTAREA FIELD</div>
+      <div class="form-group">
+        <label for="content" class="col-sm-2 control-label">Page Content</label>
+        <div class="col-sm-10">
+          <input
+            id="content"
+            name="content"
+            type="textarea"
+            class="form-control"
+          />
+        </div>
+      </div>
 
-      <div>PLACEHOLDER FOR PAGE STATUS INPUT FIELD</div>
+      <div class="form-group">
+        <label for="status" class="col-sm-2 control-label">Page Status</label>
+        <div class="col-sm-10">
+          <input id="status" name="status" type="text" class="form-control" />
+        </div>
+      </div>
 
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-primary">submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </form>
   `);
